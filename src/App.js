@@ -4,9 +4,12 @@ import TrafficLight from '../src/components/traffic-light/traffic-light.componen
 function App() {
   return (
     <div className="App">
-      <TrafficLight />
-      <TrafficLight />
-      <TrafficLight />
+      <h1>Favor Support Task Status</h1>
+      <div className="status-light-container">
+        <TrafficLight taskName="Customer Chats"/>
+        <TrafficLight taskName="Runner Chats"/>
+        <TrafficLight taskName="System Escalations"/>
+      </div>
     </div>
   );
 }

@@ -5,13 +5,13 @@ const LightBulb = ({ color }) => (
     <div className="light-bulb">
         {
             color === "green"
-            ? <div className="green-light"></div>
+            ? <div className="green-light bulb"></div>
             : (
                 color === "yellow"
-                ? <div className="yellow-light"></div>
+                ? <div className="yellow-light bulb"></div>
                 : (
                     color === "red"
-                    ? <div className="red-light"></div>
+                    ? <div className="red-light bulb"></div>
                     : null
                 )
             )

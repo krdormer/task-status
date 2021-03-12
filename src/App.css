@@ -1,4 +1,15 @@
 .App {
   text-align: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.status-light-container {
   display: flex;
+  margin: 0;
 }
