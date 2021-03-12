@@ -1,11 +1,11 @@
 import React from 'react';
 import './light-bulb.styles.css';
 
-const LightBulb = ({ color }) => (
+const LightBulb = ({ color, trafficLightClicked }) => (
     <div className="light-bulb">
         {
             color === "green"
-            ? <div className="green-light bulb"></div>
+            ? <div className="green-light bulb" onClick={() => trafficLightClicked()}></div>
             : (
                 color === "yellow"
                 ? <div className="yellow-light bulb"></div>
