@@ -1,0 +1,10 @@
+.traffic-light {
+    width: 30vw;
+    border: 2px solid black;
+    margin: 5%;
+}
+
+.lights {
+    width: 250px;
+    margin: 0 auto;
+}
