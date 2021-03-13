@@ -8,28 +8,75 @@ class TrafficLight extends React.Component {
         super();
 
         this.state = {
-            active: false
+            backgroundColor: null,
+            greenLight: {
+                color: "green",
+                clicked: false
+            },
+            yellowLight: {
+                color: "yellow",
+                clicked: false
+            },
+            redLight: {
+                color: "red",
+                clicked: false
+            }
         }
     }
 
-    trafficLightClicked = () => {
-        this.setState({ active: true });
-    }
-    
+    // Remember to add previous state or the buttons disappear 9
+    trafficLightClicked = ( lightColor ) => {
+        alert(lightColor)
+        if (lightColor === 'greenLight') {
+            this.setState({ 
+                backgroundColor: "green",
+                greenLight: {
+                    color: "green",
+                    clicked: true
+                }
+            })
+        } else if (lightColor === 'yellowLight') {
+            this.setState({
+                backgroundColor: "yellow",
+                yellowLight: {
+                    color: "yellow",
+                    clicked: true
+                }
+            })
+        } else if (lightColor === 'redLight') {
+            this.setState({
+                backgroundColor: "red",
+                redLight: {
+                    color: "red",
+                    clicked: true
+                }
+            })
+        }
+    };
 
     render() {
         const { taskName } = this.props;
+        const { greenLight, yellowLight, redLight, backgroundColor } = this.state;
         console.log(this.state);
         return (
-            <div className="traffic-light">
+            <div className={`${backgroundColor} ? ${backgroundColor} traffic-light : traffic-light`}>
                 <h2>{taskName}</h2>
                 <div className="lights">
                     <LightBulb 
-                        color="green"
+                        color={greenLight.color}
+                        backgroundColor={greenLight.backgroundColor}
                         trafficLightClicked={this.trafficLightClicked}
                     />
-                    <LightBulb color="yellow"/>
-                    <LightBulb color="red"/>
+                    <LightBulb 
+                        color={yellowLight.color}
+                        backgroundColor={yellowLight.backgroundColor}
+                        trafficLightClicked={this.trafficLightClicked}
+                    />
+                    <LightBulb 
+                        color={redLight.color}
+                        backgroundColor={redLight.backgroundColor}
+                        trafficLightClicked={this.trafficLightClicked}
+                    />
                 </div>
             </div>
         );

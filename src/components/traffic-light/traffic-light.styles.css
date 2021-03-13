@@ -8,3 +8,15 @@
     width: 250px;
     margin: 0 auto;
 }
+
+.green {
+    background-color: palegreen;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.red {
+    background-color: indianred;
+}
