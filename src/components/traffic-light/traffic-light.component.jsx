@@ -7,8 +7,13 @@ class TrafficLight extends React.Component {
     constructor() {
         super();
 
+        // Initial State 
         this.state = {
+            // Background color of traffic light set as green
             backgroundColor: "green",
+            // Light bulb objects, 
+                // color property is for default background color of light  
+                // clicked property is defaulted to false 
             greenLight: {
                 color: "green",
                 clicked: false
@@ -24,7 +29,8 @@ class TrafficLight extends React.Component {
         }
     }
 
-    // Remember to add previous state or the buttons disappear 9
+    // Function for updating traffic light background color state when light bulb component is clicked 
+    // Accepts string of lightColor, outputs new state 
     trafficLightClicked = ( lightColor ) => {
         if (lightColor === 'greenLight') {
             this.setState({ 
@@ -56,10 +62,13 @@ class TrafficLight extends React.Component {
     render() {
         const { taskName } = this.props;
         const { greenLight, yellowLight, redLight, backgroundColor } = this.state;
-        console.log(this.state);
         return (
+            // Renders a traffic light, containing 3 light bulbs
+            // If state property backgroundColor exists, string backgroundColor becomes class name, updates background color 
             <div className={`${backgroundColor} ? ${backgroundColor} traffic-light : traffic-light`}>
+                {/* Displays name of Support Task */}
                 <h3 className='task-text'>{taskName}</h3>
+                {/* Lightbulb container */}
                 <div className="lights">
                     <LightBulb 
                         color={greenLight.color}

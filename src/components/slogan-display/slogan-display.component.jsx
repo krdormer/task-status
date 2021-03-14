@@ -1,9 +1,9 @@
-import React from 'react'; 
 import './slogan-display.styles.css';
 
-const SloganDisplay = () => (
+// Component receives prop slogan, used to display support slogans 
+const SloganDisplay = ({ slogan }) => (
     <div className="slogan-display">
-        <p className="slogan-text">Don't Stop Til' 85!</p>
+        <p className="slogan-text">{slogan}</p>
     </div>
 );
 

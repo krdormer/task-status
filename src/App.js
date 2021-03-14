@@ -16,7 +16,7 @@ const App = () => (
         <TrafficLight taskName="H-E-B System Escalations" />
       </div>
       {/* Component for display of current Support campaign(s) */}
-      <SloganDisplay />
+      <SloganDisplay slogan={"Don't Stop Til' 85!"}/>
       {/* Component for display of footer info, feedback, contact, etc */}
       <Footer />
     </div>
