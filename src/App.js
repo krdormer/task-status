@@ -6,14 +6,18 @@ import Footer from '../src/components/footer/footer.component';
 
 const App = () => (
     <div className="App">
-      <h1>Favor Support Task Status</h1>
+      <h1 className="app-title">Favor Support Task Status</h1>
+
+      {/* Container for Traffic Light Components */}
       <div className="status-light-container">
         <TrafficLight taskName="Customer Chats"/>
         <TrafficLight taskName="Runner Chats"/>
         <TrafficLight taskName="System Escalations"/>
         <TrafficLight taskName="H-E-B System Escalations" />
       </div>
+      {/* Component for display of current Support campaign(s) */}
       <SloganDisplay />
+      {/* Component for display of footer info, feedback, contact, etc */}
       <Footer />
     </div>
 );

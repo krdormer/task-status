@@ -14,7 +14,7 @@ body {
   -webkit-text-stroke-color: black;
 }
 
-h1 {
+.app-title {
   font-size: 3.8em;
   margin-bottom: 0;
   padding: 0;
