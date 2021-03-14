@@ -1,22 +1,28 @@
 .traffic-light {
-    width: 30vw;
+    display: inline-block;
+    width: 22vw;
+    height: 65vh;
     border: 2px solid black;
-    margin: 5%;
+    margin: 1%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(37, 36, 36);
+    font-size: 1.3em;
 }
 
 .lights {
-    width: 250px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .green {
-    background-color: palegreen;
+    background-color: #98fb98;
 }
 
 .yellow {
-    background-color: goldenrod;
+    background-color: #fafa2a;
 }
 
 .red {
-    background-color: indianred;
+    background-color: #FF6666;
 }

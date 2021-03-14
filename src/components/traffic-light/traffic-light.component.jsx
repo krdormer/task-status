@@ -8,7 +8,7 @@ class TrafficLight extends React.Component {
         super();
 
         this.state = {
-            backgroundColor: null,
+            backgroundColor: "green",
             greenLight: {
                 color: "green",
                 clicked: false
@@ -26,7 +26,6 @@ class TrafficLight extends React.Component {
 
     // Remember to add previous state or the buttons disappear 9
     trafficLightClicked = ( lightColor ) => {
-        alert(lightColor)
         if (lightColor === 'greenLight') {
             this.setState({ 
                 backgroundColor: "green",
@@ -60,7 +59,7 @@ class TrafficLight extends React.Component {
         console.log(this.state);
         return (
             <div className={`${backgroundColor} ? ${backgroundColor} traffic-light : traffic-light`}>
-                <h2>{taskName}</h2>
+                <h3 className='task-text'>{taskName}</h3>
                 <div className="lights">
                     <LightBulb 
                         color={greenLight.color}

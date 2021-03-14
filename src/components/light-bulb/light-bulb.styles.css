@@ -1,35 +1,32 @@
-.green-light {
+.lightbulb {
+    display: inline-block;
+    width: 50%;
+    margin: 2%;
+    height: 6em;
     border: 2px solid black;
     border-radius: 100%;
-    width: 100%;
-    height: 250px;
-    background-color: #33a532;
+}
+
+.green-light {
+    background-color: #008000;
 }
 
 .green-light:hover {
-    background-color: chartreuse;
+    background-color: #76c92d;
 }
 
 .yellow-light {
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 100%;
-    height: 250px;
-    background-color: #f7b500;
+    background-color: #ffff00;
 }
 
 .yellow-light:hover {
-    background-color: gold;
+    background-color: #e7b416;
 }
 
 .red-light {
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 100%;
-    height: 250px;
-    background-color: #bb1e10;
+    background-color: #ff0000;
 }
 
 .red-light:hover {
-    background-color: orangered;
+    background-color: #cc3232;
 }

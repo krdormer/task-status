@@ -1,17 +1,17 @@
 import React from 'react';
 import './light-bulb.styles.css';
 
-const LightBulb = ({ color, backgroundColor, trafficLightClicked }) => (
+const LightBulb = ({ color, trafficLightClicked }) => (
     <div className="light-bulb">
         {
-            color === "green" || backgroundColor === "green"
-            ? <div className="green-light" onClick={() => trafficLightClicked('greenLight')}></div>
+            color === "green"
+            ? <div className="green-light lightbulb" onClick={() => trafficLightClicked('greenLight')}></div>
             : (
                 color === "yellow"
-                ? <div className="yellow-light" onClick={() => trafficLightClicked('yellowLight')}></div>
+                ? <div className="yellow-light lightbulb" onClick={() => trafficLightClicked('yellowLight')}></div>
                 : (
                     color === "red"
-                    ? <div className="red-light" onClick={() => trafficLightClicked('redLight')}></div>
+                    ? <div className="red-light lightbulb" onClick={() => trafficLightClicked('redLight')}></div>
                     : null
                 )
             )

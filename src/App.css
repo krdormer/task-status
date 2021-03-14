@@ -1,15 +1,29 @@
-.App {
-  text-align: center;
+body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  background-image: url('https://i.pinimg.com/736x/e7/b4/22/e7b422f0cd277bfa4caa965270893a0e.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+  color: #00a1df;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
 }
 
 h1 {
+  font-size: 3.8em;
   margin-bottom: 0;
+  padding: 0;
 }
 
 .status-light-container {
   display: flex;
-  margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;  
+  width: 100vw;
+  margin: 1%;
 }
