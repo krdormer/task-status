@@ -1,0 +1,15 @@
+.footer {
+    width: 100%;
+    height: 100%;
+    margin-top: 2.5em;
+}
+
+.feedback {
+    font-size: 1.5em;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.footer-feedback-link {
+    text-decoration: none;
+}
