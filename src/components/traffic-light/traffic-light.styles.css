@@ -1,13 +1,13 @@
 .traffic-light {
-    display: inline-block;
-    width: 22vw;
-    height: 65vh;
+    width: 15vw;
+    min-height: 55vh;
     border: 2px solid black;
-    margin: 1%;
+    margin: 3%;
+    padding: 1%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
-    background-color: rgb(37, 36, 36);
-    font-size: 1.3em;
+    background-color: #252424;
+    font-size: 1.6em;
 }
 
 .lights {
@@ -25,4 +25,9 @@
 
 .red {
     background-color: #FF6666;
+}
+
+.task-text {
+    font-size: 1.2vw;
+    line-height: 0;
 }

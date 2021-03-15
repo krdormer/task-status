@@ -32,6 +32,7 @@ class TrafficLight extends React.Component {
     // Function for updating traffic light background color state when light bulb component is clicked 
     // Accepts string of lightColor, outputs new state 
     trafficLightClicked = ( lightColor ) => {
+        console.log(lightColor)
         if (lightColor === 'greenLight') {
             this.setState({ 
                 backgroundColor: "green",
@@ -60,6 +61,7 @@ class TrafficLight extends React.Component {
     };
 
     render() {
+        console.log(this.state);
         const { taskName } = this.props;
         const { greenLight, yellowLight, redLight, backgroundColor } = this.state;
         return (
