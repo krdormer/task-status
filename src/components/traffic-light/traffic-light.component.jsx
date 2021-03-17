@@ -32,36 +32,37 @@ class TrafficLight extends React.Component {
     // Function for updating traffic light background color state when light bulb component is clicked 
     // Accepts string of lightColor, outputs new state 
     trafficLightClicked = ( lightColor ) => {
-        console.log(lightColor)
-        if (lightColor === 'greenLight') {
-            this.setState({ 
-                backgroundColor: "green",
-                greenLight: {
-                    color: "green",
-                    clicked: true
-                }
-            })
-        } else if (lightColor === 'yellowLight') {
-            this.setState({
-                backgroundColor: "yellow",
-                yellowLight: {
-                    color: "yellow",
-                    clicked: true
-                }
-            })
-        } else if (lightColor === 'redLight') {
-            this.setState({
-                backgroundColor: "red",
-                redLight: {
-                    color: "red",
-                    clicked: true
-                }
-            })
-        }
+        switch (lightColor) {
+            case 'greenLight':
+                return this.setState({ 
+                    backgroundColor: "green",
+                    greenLight: {
+                        color: "green",
+                        clicked: true
+                    }
+                });
+            case 'yellowLight':
+                return this.setState({
+                    backgroundColor: "yellow",
+                    yellowLight: {
+                        color: "yellow",
+                        clicked: true
+                    }
+                });
+            case 'redLight':
+                return this.setState({
+                    backgroundColor: "red",
+                    redLight: {
+                        color: "red",
+                        clicked: true
+                    }
+                });
+            default:
+                return null;
+        };
     };
 
     render() {
-        console.log(this.state);
         const { taskName } = this.props;
         const { greenLight, yellowLight, redLight, backgroundColor } = this.state;
         return (

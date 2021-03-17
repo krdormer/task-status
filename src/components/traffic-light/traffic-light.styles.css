@@ -1,6 +1,6 @@
 .traffic-light {
-    width: 15vw;
-    min-height: 55vh;
+    width: 16vw;
+    min-height: 50vh;
     border: 2px solid black;
     margin: 3%;
     padding: 1%;
@@ -31,3 +31,9 @@
     font-size: 1.2vw;
     line-height: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
