@@ -70,7 +70,9 @@ class TrafficLight extends React.Component {
             // If state property backgroundColor exists, string backgroundColor becomes class name, updates background color 
             <div className={`${backgroundColor} ? ${backgroundColor} traffic-light : traffic-light`}>
                 {/* Displays name of Support Task */}
-                <h3 className='task-text'>{taskName}</h3>
+                <div className="task-text">
+                    <h3>{taskName}</h3>
+                </div>
                 {/* Lightbulb container */}
                 <div className="light-container">
                     <LightBulb 

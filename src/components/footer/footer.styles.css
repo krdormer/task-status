@@ -1,12 +1,8 @@
 .footer {
-    position: static;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    font-size: 1.5em;
 }
 
 .feedback {
-    font-size: 1.5em;
     margin: auto 0;
     cursor: pointer;
 }

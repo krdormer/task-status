@@ -1,18 +1,18 @@
 .traffic-light {
-    width: 16vw;
-    height: 50vh;
+    width: 17vw;
+    height: 55vh;
     border: 2px solid black;
     margin: 1%;
     padding: 1%;
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
     background-color: #252424;
-    font-size: 1.6em;
 }
 
 .light-container {
     width: 100%;
     margin: 0 auto;
+    padding: 1%;
 }
 
 .green {
@@ -28,6 +28,7 @@
 }
 
 .task-text {
-    font-size: 1.2vw;
+    max-width: 100%;
     line-height: 0;
+    padding: 2%;
 }
