@@ -72,7 +72,7 @@ class TrafficLight extends React.Component {
                 {/* Displays name of Support Task */}
                 <h3 className='task-text'>{taskName}</h3>
                 {/* Lightbulb container */}
-                <div className="lights">
+                <div className="light-container">
                     <LightBulb 
                         color={greenLight.color}
                         backgroundColor={greenLight.backgroundColor}
