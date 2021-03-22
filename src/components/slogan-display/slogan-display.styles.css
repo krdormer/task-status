@@ -4,4 +4,5 @@
     font-family: 'Bangers', cursive;
     font-size: 5em;
     margin: 2%;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
 }
